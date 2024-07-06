@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project on Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="frame">
+            <p class="heading">Calculator</p>
+            <div class="display">
+                <input type ="text" id="box" disabled>
+            </div>
+            <br>
+            <div class="buttons-group">
+                <input class="button" type="button" value="9" onclick="box.value += '9'">
+                <input class="button" type="button" value="8" onclick="box.value += '8'">
+                <input class="button" type="button" value="7" onclick="box.value += '7'">
+                <input class="button" type="button" value="+" onclick="box.value += '+'">
+            </div>
+            <br>
+            <div class="buttons-group">
+                <input class="button" type="button" value="6" onclick="box.value += '6'">
+                <input class="button" type="button" value="5" onclick="box.value += '5'">
+                <input class="button" type="button" value="4" onclick="box.value += '4'">
+                <input class="button" type="button" value="-" onclick="box.value += '-'">
+            </div>
+            <br>
+            <div class="buttons-group">
+                <input class="button" type="button" value="3" onclick="box.value += '3'">
+                <input class="button" type="button" value="2" onclick="box.value += '2'">
+                <input class="button" type="button" value="1" onclick="box.value += '1'">
+                <input class="button" type="button" value="*" onclick="box.value += '*'">
+            </div>
+            <br>
+            <div class="buttons-group">
+                <input class="button" type="button" value="C" onclick="box.value = ''">
+                <input class="button" type="button" value="0" onclick="box.value += '0'">
+                <input class="button" type="button" value="=" onclick="box.value = eval(box.value)">
+                <input class="button" type="button" value="/" onclick="box.value += '/'">
+            </div>
+            
+        </div>
+    </body>
+</html>
